@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react-dom';
-
+import React from 'react';
+import { useEffect } from 'react';
 import ProductComponent from './ProductComponent';
 import axios  from 'axios';
 import { useDispatch } from 'react-redux';
@@ -22,6 +22,7 @@ const ProductListing = () => {
   } , []);
 
   return (
+    
     <div className='ui grid container'>
       <ProductComponent/>
     </div>
